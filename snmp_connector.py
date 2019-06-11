@@ -69,7 +69,7 @@ class SnmpConnector:
         if self.list_results:
             return self.list_results
         else:
-            raise ValueError("Execute the execute() method before call results")
+            raise ValueError("list_results is empty")
 
     @staticmethod
     def construct_object_types(list_of_oids, mibs_name, mibs_path):
